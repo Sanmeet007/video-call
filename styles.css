@@ -1,0 +1,118 @@
+*{
+  box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.title{
+    top: 0;
+    width: 100%;
+    max-width: 100%;
+    z-index: 1;
+    display: block;
+    position: absolute;
+    background-color: #444444;
+    color: white;
+    margin: 0;
+}
+.heading{
+  color: rgb(8,8,8);
+  font-size: 1.2em;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.entry-modal{
+    top: 40%;
+    width: 70%;
+    margin:0 15%;
+    border: 1px solid #444444;
+    z-index: 9999;
+    position: absolute;
+    padding: 15px;
+    color: #fff;
+    background-color: rgb(108,108,108);
+    text-align: center;
+    box-shadow: 200px 0px 0px 100vh rgba(0,0,0,0.5);
+    border-radius: 3px;
+}
+.entry-modal input{
+  width: 100%;
+  padding: 8px 10px;
+  border: 1.5px solid silver;
+  outline: none;
+}
+.entry-modal input:focus{
+  border-color: orange
+}
+.entry-modal button{
+  width: 100%;
+  margin: 10px 0px;
+  display: block;
+  text-transform: uppercase;
+  padding: 8px 0px;
+}
+#notification{
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    top: 47.33px;
+    font-size: 18pt;
+    width: 100%;
+    background-color: orange;
+}
+
+
+.room-input{
+  border: none;
+  padding:5px;
+}
+
+
+#remote-video{
+    position: absolute;
+    inset:0;
+    object-fit: cover;
+    z-index:1;
+    width:100vw;
+    height:100vh;
+    background: rgba(9,9,9,0.9);
+}
+
+#local-video{
+    position: absolute;
+    z-index:2;
+    object-fit: cover;
+    height: 150px;
+    width: 120px;
+    left:0;
+    top:0;
+    transform: translate(20px  , 20px);
+    background-color: #444444;
+}
+.meet-controls-bar{
+    bottom: 0;
+    background-color: #2e2e2e;
+    left: 0;
+    position: fixed;
+    width: 100vw;
+    z-index: 3;
+    overflow: hidden;
+    height: 60px;
+   display: flex;
+   justify-content: center;
+   align-items:  center;
+}
+
+.meet-controls-bar button{
+   background: none;
+   text-align: center;
+   text-transform: uppercase;
+   font-size: 1.1em;
+   border: none;
+   color: white
+}
